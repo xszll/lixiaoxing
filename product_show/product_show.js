@@ -1,4 +1,4 @@
-// pages/car/car.js
+// product_show/product_show.js
 Page({
 
   /**
