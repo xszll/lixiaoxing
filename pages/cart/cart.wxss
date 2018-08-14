@@ -1,1 +1,35 @@
 /* pages/cart/cart.wxss */
+.addr{
+  height: 90rpx;
+  display: flex;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: -2rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #999;
+}
+.addr .dingwei{
+  width: 26rpx;
+  height: 30rpx;
+  margin: 30rpx 5px 0 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeBAMAAADA9RPrAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURf///8zMzPLy8tHR0d/f3/v7++np6dbW1g24tw8AAAC0SURBVBjTTZC5DsJADERHUY7aJCQtFNBvQZ/lC1aioCUIehDw//jaJFOs9bT2+ACA6vFpvweYikis9mk0kardCZTk2gjFTMSfxQz0AhqtCfL2wJ5Dt6skf7Cy0b0S3pyX2CyoDb9dtr6BnCaloNX5L1rbyuok4wdcpStwkXA/ButeLpNtvcA0Luv5EE2mXg+xWmh1iaTUrBJn19FPKAvTkJxqoROyJpvcVfoxXZFXW1SfLf4B+F4ddYJGEj0AAAAASUVORK5CYII=);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.addr .weizhi{
+  line-height: 90rpx;
+  font-size: 28rpx;
+  color: #999;
+  max-width: 24%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 400rpx;
+}
+.addr .edit{
+  font-size: 28rpx;
+  color:#e4393c;
+  float: right;
+
+}

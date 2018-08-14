@@ -1,11 +1,11 @@
-// pages/cart/cart.js
+// product_show/product_show.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+     title:'购物车'
   },
 
   /**
