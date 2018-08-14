@@ -2,8 +2,8 @@
   "pages": [
     "pages/car/car",
     "pages/cart/cart",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/index/index"    
   ],
   "window": {
     "backgroundTextStyle": "light",

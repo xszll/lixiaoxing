@@ -10,4 +10,5 @@
   <view class="usermotto">
     <text class="user-motto">赶快来</text>
   </view>
+  <navigator url='/pages/car/car'>购物车</navigator>
 </view>
