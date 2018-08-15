@@ -1,35 +1,256 @@
 /* pages/cart/cart.wxss */
-.addr{
+
+.addr {
   height: 90rpx;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 20rpx;
   box-sizing: border-box;
-  background: #fff;
-  margin-bottom: -2rpx;
-  line-height: 90rpx;
-  border-bottom: 2rpx solid #999;
+  font-size: 24rpx;
+  color: #999;
+  border-bottom: 1rpx solid #eee;
 }
-.addr .dingwei{
+
+.addr .weizhi {
+  width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addr .weizhi .position {
+  display: inline-block;
+  vertical-align: middle;
   width: 26rpx;
   height: 30rpx;
-  margin: 30rpx 5px 0 0;
+  margin: 0 5rpx 0 0;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeBAMAAADA9RPrAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURf///8zMzPLy8tHR0d/f3/v7++np6dbW1g24tw8AAAC0SURBVBjTTZC5DsJADERHUY7aJCQtFNBvQZ/lC1aioCUIehDw//jaJFOs9bT2+ACA6vFpvweYikis9mk0kardCZTk2gjFTMSfxQz0AhqtCfL2wJ5Dt6skf7Cy0b0S3pyX2CyoDb9dtr6BnCaloNX5L1rbyuok4wdcpStwkXA/ButeLpNtvcA0Luv5EE2mXg+xWmh1iaTUrBJn19FPKAvTkJxqoROyJpvcVfoxXZFXW1SfLf4B+F4ddYJGEj0AAAAASUVORK5CYII=);
   background-size: 100% 100%;
   background-position: center center;
 }
-.addr .weizhi{
-  line-height: 90rpx;
-  font-size: 28rpx;
-  color: #999;
-  max-width: 24%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin-right: 400rpx;
-}
-.addr .edit{
-  font-size: 28rpx;
-  color:#e4393c;
-  float: right;
 
+.addr > .edit {
+  color: #e4393c;
+}
+
+#listContent {
+  width: 100%;
+  height: auto;
+}
+
+#listContent .section {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30rpx;
+  background: #fff;
+  position: relative;
+}
+
+.section .headWrap {
+  width: 100%;
+  height: 80rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  width: 40rpx;
+  height: 40rpx;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURUxpcZmZmZqampqampubm5qamqioqJqampqampqampqamqGhoZmZmXRqFBEAAAAMdFJOUwDwRqiAagslwtY6FiGs6jgAAADlSURBVCjPY2CAgFKLiZLN4QzIgNvzDBhM2YAQY3M8IxxUlq5qeEYkAS6oeMYIwlA+IwQTYznTBWOuOOMA1WxzFGFSzGGIAcwHFRCCTDIGYNpHHNkhhUfAcmcUkAUh3MSjKE5miBED6W5AFeQA6ueWWYAqyHVwAwPLYQY0YOPAwHkIXVBnAkONALog43GGGAN0QeajDDYB6IKshxl6FNAFmU4wzClAF2Q/ySCTgC7IdhC7IFbtWC3C6iSsjsfqTawBgjXosAYy1ujAHnFYoxhrYsCebLAmMKxJEXuixZ68sWYE9CwDAH0nU0cSKDB5AAAAAElFTkSuQmCC); 
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.select.hot {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAANlBMVEUAAADpPD3tO0HrPD7qPD7qOz7qPD3pOz7qPD3qPD3pPD7rPD/pQkLzRkbqQEDpPUH/VVXpOz3Rbw31AAAAEXRSTlMA6iuA81DZ07+rpXIjFgw7CVCvuuwAAADZSURBVDjLjdVbrsMgDATQoThAeYTO/jd7fy6ioU7wfCXKEY4lMLimlpyCSEi5VNym+civRN9UdnrhEvHnrzsclbhjdZ438Rf2efM27w9mptOkUndT/eAm/x2dbgfdOQsbijfZQ2lzwf2S8eHf+ugzAvXBvdDHc0V5ci83XgqyyTEjmRwTgskxQEyOAjE5yix9dHfvGGYzfXzUHBPysozumFG4SNWxoC4t6I4ViFepuzi22ZSqo183rutdc9LMR8F+uOzH1T4A9iPFPqTsY88+SO2j2T7szdfHHy1xS+1j0wOxAAAAAElFTkSuQmCC);
+}
+
+.headWrap .shopIcon {
+  color: #ddd;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 10rpx;
+  background: url(//img11.360buyimg.com/jdphoto/s120x120_jfs/t15310/38/1621444639/6673/3159485e/5a5316c9N59ab9cf8.png) no-repeat;
+  background-size: 120rpx auto;
+  background-position: -10rpx -70rpx;
+}
+
+.headWrap .shopName {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headWrap navigator {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 32rpx;
+}
+
+.headWrap .arrowRight {
+  width: 12rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+  background: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 12 20%22%3E%3Cpath fill=%22#CCCCCC%22 fill-rule=%22evenodd%22 d=%22M2 20c-.8 0-1.5-.5-1.8-1.2-.3-.8-.2-1.6.4-2.2L7.2 10 .6 3.4c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l8 8c.4.4.6 1 .6 1.4 0 .5-.2 1-.6 1.4l-8 8c-.4.4-1 .6-1.4.6z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.item > image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.item .goodsContent {
+  flex: 1;
+}
+
+.goodsContent .goodsName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.goodsContent .goodsDescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 2;
+}
+
+.goodsContent .goodsLine{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goodsContent .goodsPrice{
+  flex: 1;
+  color: #e4393c;
+  font-size: 20rpx;
+}
+.goodsConten .goodsPrice text{
+  font-size: 24rpx;
+}
+.goodsLine .numWrap{
+  width: 220rpx;
+  height: 60rpx;
+  display: flex;
+  background: #f7f7f7;
+}
+.numWrap view{
+  width: 60rpx;
+  height: 100%;
+}
+.numWrap .minus{
+  position: relative;
+}
+.numWrap .plus{
+  position: relative;
+}
+.numWrap .heng{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 75%;
+  height: 4rpx;
+  background: #999;
+
+}
+.numWrap .shu{
+   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 75%;
+  height: 4rpx;
+  background: #999;
+  transform: rotateZ(90deg);
+}
+.numWrap input{
+  width: 98rpx;
+  height: 100%;
+  border-left: 1rpx solid #fff;
+  border-right: 1rpx solid #fff;
+  text-align: center;
+}
+.removeGoods{
+  text-align: right;
+  color: #999;
+  font-size: 20rpx;
+  line-height: 2.5;
+  margin: 10rpx 0 ;
+}
+.line{
+  width: 100%;
+  height: 20rpx;
+  background: #e5e5e5;
+}
+
+.fixBar{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-top: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+}
+.total{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+
+}
+.total .totalInfo{
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.total text{
+  color: #e4393c;
+}
+.total .buy{
+  width: 220rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  background: #e4393c;
+  color: #fff;
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
+.total .totalBackMoney{
+  color: #999;
+  font-size: 20rpx;
 }

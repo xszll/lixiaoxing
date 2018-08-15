@@ -1,7 +1,136 @@
 <!--pages/cart/cart.wxml-->
-    <view class='addr'>
-      <view class='dingwei'></view>
-      <view class='weizhi'>朝阳区三环到五环</view>
-      <view class='edit'>编辑商品</view>
+<view class='addr'>
+  <view class='weizhi'>
+    <view class='position'></view>
+    朝阳区三环到五环
+  </view>
+  <view class='edit'>编辑商品</view>
+</view>
+<view id='listContent'>
+  <view class='section'>
+    <view class='headWrap'>
+      <view class='select hot'></view>
+      <view class='shopIcon'></view>
+      <view class='shopName'>
+        <navigator>小狮子耳钉 </navigator>
+        <view class='arrowRight'></view>
+      </view>
     </view>
-    
+
+    <view class='item'>
+      <view class='select'></view>
+      <image src='https://img10.360buyimg.com/n4/jfs/t5962/45/7004733038/90284/1fa29573/5979a9dbN11c9b3d1.jpg'></image>
+      <view class='goodsContent'>
+        <view class='goodsName'>
+          SWAROVSKI 施华洛世奇 天使之吻 镀白金 SOLITAIRE 女项链锁骨链 女友礼物 1800045
+        </view>
+        <view class='goodsDescription'>
+          0.04kg/件，镀白金色
+        </view>
+        <view class='goodsLine'>
+          <view class='goodsPrice'>
+            ¥
+            <text>900</text> .00
+          </view>
+          <view class='numWrap'>
+            <view class='minus'>
+              <view class='heng'></view>
+            </view>
+            <input type='number'> 10 </input>
+            <view class='plus'>
+              <view class='heng'></view>
+              <view class='shu'></view>
+            </view>
+          </view>
+        </view>
+        <view class='removeGoods'>删除</view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='select'></view>
+      <image src='https://img10.360buyimg.com/n4/jfs/t5962/45/7004733038/90284/1fa29573/5979a9dbN11c9b3d1.jpg'></image>
+      <view class='goodsContent'>
+        <view class='goodsName'>
+          SWAROVSKI 施华洛世奇 天使之吻 镀白金 SOLITAIRE 女项链锁骨链 女友礼物 1800045
+        </view>
+        <view class='goodsDescription'>
+          0.04kg/件，镀白金色
+        </view>
+        <view class='goodsLine'>
+          <view class='goodsPrice'>
+            ¥
+            <text>900</text> .00
+          </view>
+          <view class='numWrap'>
+            <view class='minus'>
+              <view class='heng'></view>
+            </view>
+            <input type='number'> 10 </input>
+            <view class='plus'>
+              <view class='heng'></view>
+              <view class='shu'></view>
+            </view>
+          </view>
+        </view>
+        <view class='removeGoods'>删除</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='line'></view>
+
+  <view class='section'>
+    <view class='headWrap'>
+      <view class='select hot'></view>
+      <view class='shopIcon'></view>
+      <view class='shopName'>
+        <navigator>小狮子耳钉 </navigator>
+        <view class='arrowRight'></view>
+      </view>
+    </view>
+
+    <view class='item'>
+      <view class='select'></view>
+      <image src='https://img10.360buyimg.com/n4/jfs/t5962/45/7004733038/90284/1fa29573/5979a9dbN11c9b3d1.jpg'></image>
+      <view class='goodsContent'>
+        <view class='goodsName'>
+          SWAROVSKI 施华洛世奇 天使之吻 镀白金 SOLITAIRE 女项链锁骨链 女友礼物 1800045
+        </view>
+        <view class='goodsDescription'>
+          0.04kg/件，镀白金色
+        </view>
+        <view class='goodsLine'>
+          <view class='goodsPrice'>
+            ¥
+            <text>900</text> .00
+          </view>
+          <view class='numWrap'>
+            <view class='minus'>
+              <view class='heng'></view>
+            </view>
+            <input type='number'> 10 </input>
+            <view class='plus'>
+              <view class='heng'></view>
+              <view class='shu'></view>
+            </view>
+          </view>
+        </view>
+        <view class='removeGoods'>删除</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='fixBar'>
+  <view class='select'></view>
+  <view class='total'>
+    <view class='totalInfo'>总计:
+      <text>¥500.00</text>
+      <view class='totalBackMoney'>总额¥4369.00 立减¥0.00</view>  
+    </view>
+    <view class='buy'>
+      去结算(6件)
+    </view>
+  </view>
+
+</view>
